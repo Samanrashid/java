@@ -1,0 +1,28 @@
+package Firstpro;
+
+import java.util.*;
+
+public class amstrong {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n, r, sum = 0;
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter n:");
+		n = s.nextInt();
+		int m = n;
+		while (n > 0) {
+			r = n % 10;
+			sum = sum + r*r*r;
+			n = n / 10;
+
+		}
+		if (sum == m) {
+			System.out.println("amstrong");
+		} else {
+			System.out.println("not a amstrong");
+		}
+
+	}
+
+}
